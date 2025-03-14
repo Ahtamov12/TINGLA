@@ -7,7 +7,10 @@ export default function Navbar() {
     <div className="mt-[60px] flex justify-between">
       <img src="/imgs/logo.svg" alt="" />
       {!menu ? (
-        <IoIosMenu onClick={() => setMenu(!menu)} className="md:hidden" />
+        <IoIosMenu
+          onClick={() => setMenu(!menu)}
+          className="md:hidden text-3xl"
+        />
       ) : (
         <IoMdClose onClick={() => setMenu(!menu)} />
       )}
